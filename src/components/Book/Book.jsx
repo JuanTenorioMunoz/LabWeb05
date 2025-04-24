@@ -1,4 +1,5 @@
 import "../Book/Book.css"
+import FavoriteButton from "../FavoriteButton/FavoriteButton";
 
 const Book = ({title, author, category, synopsis}) => {
     return(

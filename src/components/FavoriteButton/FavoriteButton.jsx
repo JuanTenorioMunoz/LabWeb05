@@ -10,7 +10,7 @@ const FavoriteButton = ({bookInfo}) => {
     }
 
     return(
-        <button className="favorite-button" onClick={addToFavorites}></button>
+        <button className="favorite-button" onClick={() => addToFavorites(bookInfo)}></button>
     )
 }
 
