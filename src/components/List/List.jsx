@@ -8,13 +8,7 @@
             {data.map((book) => {
                         return(
                         <div>
-                        <Book
-                            title={book.title}
-                            author={book.author}
-                            category={book.category}
-                            synopsis={book.synopsis}
-                        ></Book>
-                        <FavoriteButton bookInfo={book}></FavoriteButton>
+                            <Book bookInfo={book}></Book>
                         </div>
             )})}
         </div>
