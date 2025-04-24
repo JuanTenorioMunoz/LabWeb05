@@ -8,6 +8,10 @@ const FavoriteButton = ({bookInfo}) => {
     const addToFavorites = (bookInfo) => {
         dispatch(AddFavorite(bookInfo))
     }
+
+    return(
+        <button className="favorite-button" onClick={addToFavorites}></button>
+    )
 }
 
 export default FavoriteButton;
