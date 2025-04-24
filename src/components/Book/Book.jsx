@@ -1,6 +1,8 @@
+import "../Book/Book.css"
+
 const Book = ({title, author, category, synopsis}) => {
     return(
-        <div>
+        <div className="book-card">
             <h1 className="title">{title}</h1>
             <h2 className="author">{author}</h2>
             <h2 className="category">{category}</h2>
