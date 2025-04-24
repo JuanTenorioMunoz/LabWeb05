@@ -6,7 +6,7 @@ const FavoriteList = () => {
 
     return (
         <div className="book-list">
-
+        <h1>Favorites:</h1>
             {favorites.map((book) => (
                     <Book bookInfo={book} />
             ))}

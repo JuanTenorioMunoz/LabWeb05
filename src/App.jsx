@@ -12,8 +12,11 @@ function App() {
   return (
     <>
       <Provider store={store}>
-        <List data={bookList}></List>
-        <FavoriteList></FavoriteList>
+        <div className='lists-container'>
+          <List data={bookList}></List>
+          <FavoriteList></FavoriteList>
+        </div>
+        
       </Provider>
     </>
   )
