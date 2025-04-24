@@ -1,4 +1,5 @@
  import Book from "../Book/Book";
+ import FavoriteButton from "../FavoriteButton/FavoriteButton";
 
  const List = ({data}) => {
 
@@ -13,6 +14,8 @@
                             synopsis={book.synopsis}
                         ></Book>  
             )})}
+
+            <FavoriteButton></FavoriteButton>
         </div>
     )
  }
