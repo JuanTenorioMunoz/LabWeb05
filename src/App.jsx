@@ -4,14 +4,16 @@ import { Provider } from 'react-redux'
 import { store } from './redux/store'
 import List from './components/List/List'
 import { bookList } from './data/data'
+import { useSelector } from 'react-redux'
+import FavoriteList from './components/FavoriteList/FavoriteList'
 
-function App() {
-  const [count, setCount] = useState(0)
+function App() { 
 
   return (
     <>
       <Provider store={store}>
         <List data={bookList}></List>
+        <FavoriteList></FavoriteList>
       </Provider>
     </>
   )
